@@ -4,30 +4,178 @@
         <title>
             Calculator
         </title>
+        <style>
+            #calc {
+                border: 1px solid black;
+                height: 400px;
+                width: 250px;
+                background-color: white;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 40px;
+                outline: none;
+            }
+            .a {
+                background-color: orange !important;
+            }
+            #b {
+                background-color: green;
+            }
+            .first {
+                border: 1px solid black; 
+                padding: 2px;
+                margin: 5px;
+                margin-top: 10px;
+                border-radius: 20px;
+                height: 25px;
+                width: 40px;
+                background-color:silver;
+                outline: none;
+                margin-left: 12px;
+            }
+            .first:hover {
+                background-color:blue;
+            }
+            .second {
+                border: 1px solid black;
+                padding: 2px;
+                margin: 5px;
+                border-radius: 50px;
+                height: 35px;
+                width: 40px;
+                background-color:silver;
+                outline: none;
+                margin-left: 12px;
+            }
+            .second:hover {
+                background-color:blue !important;
+            }
+            .third {
+                border: 1px solid black;
+                padding: 2px;
+                margin: 5px;
+                border-radius: 50px;
+                height: 35px;
+                width: 40px;
+                background-color:silver;
+                outline: none;
+                margin-left: 12px;
+            }
+            .third:hover {
+                background-color: blue !important;
+            }
+            .fourth {
+                border: 1px solid black;
+                padding: 2px;
+                margin: 5px;
+                border-radius: 50px;
+                height: 35px;
+                width: 40px;
+                background-color:silver;
+                outline: none;
+                margin-left: 12px;
+            }
+            .fourth:hover {
+                background-color: blue !important;
+            }
+            .fifth {
+                border: 1px solid black;
+                padding: 2px;
+                margin: 5px;
+                border-radius: 50px;
+                height: 35px;
+                width: 40px;
+                background-color:silver;
+                outline: none;
+                margin-left: 12px;
+            }
+            .fifth:hover {
+                background-color: blue !important;
+            }
+            .sixth {
+                border: 1px solid black;
+                padding: 2px;
+                margin: 5px;
+                border-radius: 50px;
+                height: 35px;
+                width: 40px;
+                background-color:silver;
+                outline: none;
+                margin-left: 12px;
+            }
+            .sixth:hover {
+                background-color: blue !important;
+            }
+            #zero {
+                width: 100px;
+            }
+            #clear {
+                background-color: tomato;
+            }
+            #display {
+                height: 50px;
+                width: 242px;
+            }
+            #moon {
+                /* border: 1px solid black; */
+                height: 30px;
+                width: 35px;
+                margin-top: 30px;
+                margin-left: 12px;
+                background-image: url("./images/moon.jpg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                padding: 5px;
+                border-radius: 50px;
+            }
+            #moon :hover {
+                opacity: 0.7px;
+            }
+            #return {
+                /* border: 1px solid black; */
+                margin-left: auto;
+                margin-right: auto;
+                height: 10px;
+                width: 10px;
+                margin-right: 570px;
+            }
+        </style>
     </head>
     <body>
-        <input type="text" name="" disabled> <br>
-        <button type="button" value="c">c</button>
-        <button type="button" value="del">del</button>
-        <button type="button" value="percent">%</button>
-        <button type="button" value="divide">/</button>
-        <br>
-        <button type="button" value="">7</button>
-        <button type="button" value="">8</button>
-        <button type="button" value="">9</button>
-        <button type="button" value="">*</button>
-        <br>
-        <button type="button" value="">4</button>
-        <button type="button" value="">5</button>
-        <button type="button" value="">6</button>
-        <button type="button" value="">-</button>
-        <br>
-        <button type="button" value="">1</button>
-        <button type="button" value="">2</button>
-        <button type="button" value="">3</button>
-        <button type="button" value="">+</button>
-        <br>
-        <button type="button" value="">0</button>
-        <button type="button" value="">=</button>
+        <div id="calc">
+            <input type="text" name="" disabled id="display"><br>
+            <button type="button" value="" id="moon"></button><br>
+            <button type="button" value="" class="first">e</button>
+            <button type="button" value="" class="first">π</button>
+            <button type="button" value="" class="first">sin</button>
+            <button type="button" value="" class="first">deg</button>
+            <br>
+            <button type="button" value="" class="second" id="clear">c</button>
+            <button type="button" value="" class="second">del</button>
+            <button type="button" value="" class="second">%</button>
+            <button type="button" value="" class="a second" >/</button>
+            <br>
+            <button type="button" value="" class="third">7</button>
+            <button type="button" value="" class="third">8</button>
+            <button type="button" value="" class="third">9</button>
+            <button type="button" value="" class="a third">*</button>
+            <br>
+            <button type="button" value="" class="fourth">4</button>
+            <button type="button" value="" class="fourth">5</button>
+            <button type="button" value="" class="fourth">6</button>
+            <button type="button" value="" class="a fourth">-</button>
+            <br>
+            <button type="button" value="" class="fifth">1</button>
+            <button type="button" value="" class="fifth">2</button>
+            <button type="button" value="" class="fifth">3</button>
+            <button type="button" value="" class="a fifth">+</button>
+            <br>
+            <button type="button" value="" class="sixth" id="zero">0</button>
+            <button type="button" value="" class="sixth">.</button>
+            <button type="button" value="" id="b" class="sixth">=</button><br>
+        </div>
+        <div id="return">
+            <a href="../rajeshv1.github.io/index.html">Back</a>
+        </div>
     </body>
 </html>
